@@ -1,0 +1,65 @@
+h1 {
+    margin-bottom: 40px;
+}
+.keyboard {
+    border: 1px solid slategrey;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    width: 805px;
+}
+.line::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.key {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid slategrey;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 4px;
+    text-align: center;
+    line-height: 40px; /* вертикально по центру */
+    text-transform: uppercase;
+}
+.key:hover {
+    color: white; /*при наведении меняет цвет*/
+    background: red;
+    cursor: pointer;
+}
+.backspace {
+    width: auto; /* размер блока по ширине текста*/
+}
+.tab, .capslock {
+    width: 60px;
+}
+.lshift {
+    width: 72px;
+}
+.rshift {
+    width: 84px;
+}
+.lctrl, .rctrl {
+    width: 69px;
+}
+.space { 
+    width: 282px;
+}
+.windows {
+    width: 20px;
+    padding-top: 5px;
+}
+.letter-key {
+    font-size: 10px;
+    /* line-height: 100%; */
+}
+.enter {
+    position: absolute;
+    right: 5px;
+    top: 61px;
+    width: 39px;
+    height: 96px;
+}
